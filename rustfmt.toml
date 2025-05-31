@@ -1,0 +1,5 @@
+edition = "2021"
+max_width = 100                  # 1行の最大文字数
+tab_spaces = 4                   # インデント幅
+use_small_heuristics = "Default" # 短い行の扱い
+reorder_imports = true           # import文をソート
