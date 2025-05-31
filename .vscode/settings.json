@@ -1,0 +1,39 @@
+{
+    // =========== エディタ全般 ===========
+    // 保存時に自動でコードフォーマットを実行する
+    "editor.formatOnSave": true,
+    // ファイルを開いている間に自動でインデントやフォーマットを適用する
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    // デフォルトのフォーマッターとして rust-analyzer の rustfmt を指定
+    // Rust ファイル（.rs）を保存するときは rustfmt で整形する
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    // 保存時に不要な末尾スペースを削除する
+    "files.trimTrailingWhitespace": true,
+    // ファイル末尾に改行を強制する
+    "files.insertFinalNewline": true,
+    // =========== rust-analyzer 設定 ===========
+    "rust-analyzer.cargo.features": "all",
+    // =========== デバッグ設定 ===========
+    // デバッグ時に標準出力をターミナルで表示する
+    "lldb.launch.runInTerminal": true,
+    // コード補完の候補表示を少しタイムアウトを延ばして安定させる
+    "editor.quickSuggestionsDelay": 50,
+    // =========== ファイルウォッチャー設定 ===========
+    // Rust のビルド成果物やターゲットフォルダをウォッチャーから除外し、パフォーマンス向上
+    "files.watcherExclude": {
+        "**/target/**": true,
+        "**/node_modules/**": true
+    },
+    // =========== 検索設定 ===========
+    // 検索時に target フォルダをデフォルトで除外する
+    "search.exclude": {
+        "**/target/**": true
+    },
+    // =========== 拡張機能の推奨設定 ===========
+    // 拡張機能「crates」（Rust のクレートバージョンを管理する）の有効化
+    "crates.autoupdate": true,
+    "crates.upgradeToPreReleases": false,
+}
