@@ -1,5 +1,6 @@
 use indexmap::IndexMap;
 use std::collections::HashMap;
+use std::fmt::Debug;
 
 fn main() {
     let num1: i8 = 1;
@@ -62,4 +63,55 @@ fn main() {
     println!("mut_str: {}", mut_str);
     mut_str = "ミュータブルな文字列2";
     println!("mut_str: {}", mut_str);
+
+    println!("add(1, 2): {}", add(1, 2));
+    println!("sub(1, 2): {}", sub(1, 2));
+    println!("mul(1, 2): {}", mul(1, 2));
+    println!("div(1, 2): {}", div(1, 2));
+    println!("mod_op(1, 2): {}", mod_op(1, 2));
+    println!("pow(1, 2): {}", pow(1, 2));
+    println!("sqrt(1.0): {}", sqrt(1.0));
+    println!("abs(1.0): {}", abs(1.0));
+    println!("max(1, 2): {}", max(1, 2));
+    my_print("Hello, world!");
+}
+
+fn add(a: i8, b: i8) -> i8 {
+    a + b
+}
+
+fn sub(a: i8, b: i8) -> i8 {
+    a - b
+}
+
+fn mul(a: i8, b: i8) -> i8 {
+    a * b
+}
+
+fn div(a: i8, b: i8) -> i8 {
+    a / b
+}
+
+fn mod_op(a: i8, b: i8) -> i8 {
+    a % b
+}
+
+fn pow(a: i8, b: u32) -> i8 {
+    a.pow(b)
+}
+
+fn sqrt(a: f32) -> f32 {
+    a.sqrt()
+}
+
+fn abs(a: f32) -> f32 {
+    a.abs()
+}
+
+fn max(a: i8, b: i8) -> i8 {
+    a.max(b)
+}
+
+fn my_print(x: impl Debug) {
+    println!("{:?}", x)
 }
