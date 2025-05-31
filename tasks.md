@@ -6,8 +6,8 @@
 - [x] 1. **Rust開発環境のセットアップ** - rustupをインストールし、rustc --versionで確認
 - [ ] 2. **Cursorの設定** - rust-analyzerプラグインのインストールと設定
 - [x] 3. **Git リポジトリ初期化** - rust-learning-journeyリポジトリを作成、.gitignore設定
-- [ ] 4. **Cargoの基本** - cargo new hello_worldでプロジェクト作成、ディレクトリ構造を理解
-- [ ] 5. **初めてのビルドと実行** - cargo build、cargo run、cargo checkの違いを体験
+- [x] 4. **Cargoの基本** - cargo new hello_worldでプロジェクト作成、ディレクトリ構造を理解
+- [x] 5. **初めてのビルドと実行** - cargo build、cargo run、cargo checkの違いを体験
 
 ### 基本構文（6-15）
 - [ ] 6. **Hello, World!** - println!マクロを使った出力、マクロの概念理解
