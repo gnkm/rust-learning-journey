@@ -10,6 +10,20 @@ fn main() {
     println!("num2: {}", num2);
     println!("num3: {}", num3);
 
+    let b1: bool = true;
+    let b2: bool = false;
+
+    println!("b1: {}", b1);
+    println!("b2: {}", b2);
+
+    let c1: char = 'a';
+    let c2: char = 'b';
+    let c3: char = '😀';
+
+    println!("c1: {}", c1);
+    println!("c2: {}", c2);
+    println!("c3: {}", c3);
+
     let mut map1: HashMap<String, i8> = HashMap::new();
     map1.insert(String::from("num1"), 1);
     map1.insert(String::from("num2"), 2);
