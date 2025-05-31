@@ -53,4 +53,13 @@ fn main() {
     for (key, value) in &map2 {
         println!("key: {}, value: {}", key, value);
     }
+
+    let notmut_str: &str = "イミュータブルな文字列";
+    // notmut_str = "Hello, world!!"; // cannot assign twice to immutable variable
+    println!("notmut_str: {}", notmut_str);
+
+    let mut mut_str: &str = "ミュータブルな文字列";
+    println!("mut_str: {}", mut_str);
+    mut_str = "ミュータブルな文字列2";
+    println!("mut_str: {}", mut_str);
 }
