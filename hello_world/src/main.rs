@@ -1,3 +1,13 @@
+//! ハローワールドプログラム
+//!
+//! このプログラムは、基本的なデータ型と変数束縛を表示するプログラムです。
+//!
+//! # 使用方法
+//!
+//! ```
+//! cargo run
+//! ```
+
 use indexmap::IndexMap;
 use std::collections::HashMap;
 use std::fmt::Debug;
@@ -76,7 +86,10 @@ fn main() {
     my_print("Hello, world!");
 }
 
-fn add(a: i8, b: i8) -> i8 {
+/// 加算
+/// * `a` - 数 1
+/// * `b` - 数 2
+fn add(a: f32, b: f32) -> f32 {
     a + b
 }
 
